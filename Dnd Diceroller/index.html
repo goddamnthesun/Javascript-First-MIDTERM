@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DnD Dice Roller</title>
+  </head>
+  <body>
+    <div class="container-container">
+      <div id="d4-container">
+        <input id="amountd4" type="number" min="1" value="1" />
+        <p>d4 +</p>
+        <input id="bonusd4" type="number" value="0" />
+        <p id="resultd4">result</p>
+        <button onclick="d4()">Roll</button>
+      </div>
+      <div id="d6-container">
+        <input id="amountd6" type="number" min="1" value="1" />
+        <p>d6 +</p>
+        <input id="bonusd6" type="number" value="0" />
+        <p id="resultd6">result</p>
+        <button onclick="d6()">Roll</button>
+      </div>
+      <div id="d8-container">
+        <input id="amountd8" type="number" min="1" value="1" />
+        <p>d8 +</p>
+        <input id="bonusd8" type="number" value="0" />
+        <p id="resultd8">result</p>
+        <button onclick="d8()">Roll</button>
+      </div>
+      <div id="d10-container">
+        <input id="amountd10" type="number" min="1" value="1" />
+        <p>d10 +</p>
+        <input id="bonusd10" type="number" value="0" />
+        <p id="resultd10">result</p>
+        <button onclick="d10()">Roll</button>
+      </div>
+      <div id="d12-container">
+        <input id="amountd12" type="number" min="1" value="1" />
+        <p>d12 +</p>
+        <input id="bonusd12" type="number" value="0" />
+        <p id="resultd12">result</p>
+        <button onclick="d12()">Roll</button>
+      </div>
+      <div id="d20-container">
+        <input id="amountd20" type="number" min="1" value="1" />
+        <p>d20 +</p>
+        <input id="bonusd20" type="number" value="0" />
+        <p id="resultd20">result</p>
+        <button onclick="d20()">Roll</button>
+      </div>
+      <div id="d100-container">
+        <input id="amountd100" type="number" min="1" value="1" />
+        <p>d100 +</p>
+        <input id="bonusd100" type="number" value="0" />
+        <p id="resultd100">result</p>
+        <button onclick="d100()">Roll</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

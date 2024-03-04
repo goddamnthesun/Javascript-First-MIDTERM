@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HANGMAN</title>
+  </head>
+  <body>
+    <div id="start-game-container">
+      <button id="start-game">start game</button>
+    </div>
+    <div id="game-container">
+      <p id="answer"></p>
+      <div id="game-game-container">
+        <input id="guess" placeholder="type your guess" type="text" />
+        <button id="submit-guess">guess</button>
+        <img id="img" src="./imgs/starting.png" alt="" />
+        <p id="wrong-guess">Wrong Guesses:</p>
+      </div>
+    </div>
+    <div id="lost-container"><p id="death">you died</p></div>
+    <div id="won-container"><p id="won">YOU WIN</p></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

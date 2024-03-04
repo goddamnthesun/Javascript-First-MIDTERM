@@ -1,0 +1,47 @@
+/* stealing code is nice */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input {
+  width: 100px;
+}
+button {
+  width: 100px;
+}
+.letters {
+  color: white;
+}
+.black {
+  color: black;
+}
+img {
+  height: 300px;
+  width: 200px;
+}
+#death {
+  display: none;
+}
+#won {
+  display: nonea;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+}
+#game-container {
+  display: none;
+}
+.letters {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  margin: 0 5px;
+}

@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lucida Sans";
+}
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 47%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.tittle-container-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.tittle-container {
+  width: 1200px;
+  height: 320px;
+  padding: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .tittle-part-one {
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+  }
+  .tittle-part-two {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .tittle-part-three {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.max-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#max-number {
+  padding: 10px;
+  font-size: 24px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+
+#username-text {
+  padding: 10px;
+  font-size: 24px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.start-game-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+#start-game-btn {
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgb(196, 80, 130) 47%,
+    rgb(81, 129, 184) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+
+#start-game-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #game-text {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .game-guess-container {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  #guess-number {
+    padding: 10px;
+    font-size: 24px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  .higher-lower {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #lower {
+      margin-left: 40px;
+      display: none;
+    }
+    #higher {
+      margin-left: 40px;
+      display: none;
+    }
+    #please-enter-number {
+      margin-left: 40px;
+      display: none;
+    }
+  }
+  @keyframes jiggle {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes please {
+    0% {
+      color: black;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: black;
+    }
+  }
+  .jiggle {
+    animation: jiggle 1s ease;
+  }
+  .please {
+    animation: please 2s ease;
+  }
+
+  #submit-btn {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+      circle,
+      rgb(196, 80, 130) 47%,
+      rgb(81, 129, 184) 100%
+    );
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid black;
+  }
+  #submit-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+#game-container {
+  display: none;
+}
+#your-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #your-score-text {
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  #play-again-btn {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+      circle,
+      rgb(196, 80, 130) 47%,
+      rgb(81, 129, 184) 100%
+    );
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid black;
+  }
+  #play-again-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+#your-score-container {
+  display: none;
+}

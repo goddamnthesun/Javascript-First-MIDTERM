@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 25px;
+}
+.container-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#d4-container,
+#d6-container,
+#d8-container,
+#d10-container,
+#d12-container,
+#d20-container,
+#d100-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  gap: 10px;
+}
+input {
+  width: 60px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <div class="tittle-container-container">
+      <div class="tittle-container">
+        <div class="tittle-part-one"><h2>Welcome to the :</h2></div>
+        <div class="tittle-part-two"><h1>"GUESS THE NUMBER"</h1></div>
+        <div class="tittle-part-three"><h3>game....</h3></div>
+      </div>
+    </div>
+    <div id="start-game-container">
+      <div class="max-number-container">
+        <label for="max-number">Please enter your username:</label>
+        <input id="username-text" type="text" />
+      </div>
+      <div class="max-number-container">
+        <label for="max-number">I will be guessing from 0 to:</label>
+        <input id="max-number" type="number" />
+      </div>
+      <div class="start-game-btn-container">
+        <button id="start-game-btn">Start guessing</button>
+      </div>
+    </div>
+    <div id="game-container">
+      <div id="game-text"><p>Guess the number between 0 - maxNumber</p></div>
+      <div class="game-guess-container">
+        <div class="game-guess"><input id="guess-number" type="number" /></div>
+        <div class="higher-lower">
+          <div id="higher"><p>try higher!!!</p></div>
+          <div id="lower"><p>try lower!!!</p></div>
+          <div id="please-enter-number"><p>please enter a number</p></div>
+        </div>
+      </div>
+      <div class="submit-btn-container">
+        <button id="submit-btn">GUESS</button>
+      </div>
+    </div>
+    <div id="your-score-container">
+      <p id="your-score-text"></p>
+      <a href="./index.html"><button id="play-again-btn">Play Again</button></a>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
