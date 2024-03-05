@@ -760,7 +760,7 @@ startGame.addEventListener("click", function () {
         document.getElementById("death").style.display = "flex";
         document.getElementById(
           "death"
-        ).textContent = `You Died Answer was : ${answer}`;
+        ).textContent = `You Died :(   The Answer was : ${answer}`;
         document.getElementById("answer").style.display = "none";
         document.getElementById("guess").style.display = "none";
         document.getElementById("submit-guess").style.display = "none";
