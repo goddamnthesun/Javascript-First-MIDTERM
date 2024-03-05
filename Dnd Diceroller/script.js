@@ -1,7 +1,12 @@
+// sum function to sum all the values
+
 function sum(accumilator, currentValue) {
   return accumilator + currentValue;
 }
+
 function d4() {
+  // picks selected amount, runs according math.random that many times and than sums.
+
   let amountd4 = document.getElementById("amountd4").value;
 
   amountd4 = Number(amountd4);
@@ -20,6 +25,8 @@ function d4() {
   }
 
   sumResult = arrayResult.reduce(sum);
+
+  // if bonus is negative or positive, results display accordingly
 
   if (bonusd4 >= 0) {
     resultd4.textContent = `${amountd4}d4 = ${arrayResult.join(

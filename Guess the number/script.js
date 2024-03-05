@@ -8,6 +8,8 @@ let randomAnswer;
 let guess;
 let score;
 
+// starts the game and displays the game, if maxNumber is not inputed page restarts.
+
 startGameBtn.addEventListener("click", function () {
   maxNumber = document.getElementById("max-number").value;
   maxNumber = Number(maxNumber);
@@ -24,12 +26,16 @@ startGameBtn.addEventListener("click", function () {
       "game-text"
     ).textContent = `${username} Guess the number between 0 - ${maxNumber}`;
 
+    // guess function
+
     submitGuessBtn.addEventListener("click", function () {
       guess = document.getElementById("guess-number").value;
       guess = Number(guess);
       pleaseEnter = document.getElementById("please-enter-number");
       higher = document.getElementById("higher");
       lower = document.getElementById("lower");
+
+      // hint message animation reset on every click
 
       higher.style.animation = "none";
       lower.style.animation = "none";
@@ -42,6 +48,8 @@ startGameBtn.addEventListener("click", function () {
       higher.style.animation = null;
       lower.style.animation = null;
       pleaseEnter.style.animation = null;
+
+      // if guess is not a number, or is lowerer than the answer or higher it displays a hint.
 
       if (!guess) {
         pleaseEnter.classList.add("please");
@@ -60,6 +68,7 @@ startGameBtn.addEventListener("click", function () {
         lower.classList.add("jiggle");
         lower.style.display = "flex";
         count++;
+        // on correct guess it displays "win screen" shows tries it took and score
       } else {
         higher.style.display = "none";
         lower.style.display = "none";

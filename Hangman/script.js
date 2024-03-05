@@ -688,7 +688,7 @@ const randomWords = [
 
 const startGame = document.getElementById("start-game");
 const submitGuess = document.getElementById("submit-guess");
-
+// takes random word from the array turns that word into array of letters and puts it inside span element with index ids
 startGame.addEventListener("click", function () {
   startGame.style.display = "none";
   document.getElementById("game-container").style.display = "flex";
@@ -726,9 +726,10 @@ startGame.addEventListener("click", function () {
 
   submitGuess.addEventListener("click", function () {
     let guessLetter = document.getElementById("guess").value;
-
+    // if guess is included in the answer
     if (answer.includes(guessLetter)) {
       console.log(guessLetter);
+      // check every index, if guess = letter on index change white color to black
       for (let i = 0; i < answerLetters.length; i++) {
         if (guessLetter === answerLetters[i]) {
           let changeColor = document.getElementById("letter_" + i);
@@ -736,11 +737,14 @@ startGame.addEventListener("click", function () {
           correctGuess++;
         }
       }
+      // if every letter is revealed display "win screen"
       if (correctGuess === answerLetters.length) {
         document.getElementById("game-game-container").style.display = "none";
         document.getElementById("won").style.display = "flex";
       }
-    } else {
+    }
+    // // if guess is not included in the answer add 1 to wrongGuess count, after 6 wrong guesses display "lost screen"
+    else {
       wrongGuess++;
       wrongGuessHistory.push(guessLetter);
       wrongGuessHistroyDisplay.textContent =
